@@ -1,128 +1,140 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  form {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+li a:hover {
+  background-color: #0056b3;
+}
+
+li form {
+  display: inline;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+li .edit-link {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+li .edit-link:hover {
+  background-color: #218838;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #17a2b8;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #138496;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container ul {
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
   li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
-  
-  li a {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease-in-out;
-    padding: 5px 10px;
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  li a:hover {
-    background-color: #0056b3;
-  }
-  
-  li form {
-    display: inline;
-  }
-  
-  li button {
-    margin-left: 5px;
-    padding: 5px 10px;
-    background-color: #dc3545;
-    border: none;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  li button:hover {
-    background-color: #c82333;
-  }
-  
-  li .edit-link {
-    margin-left: 5px;
-    padding: 5px 10px;
-    background-color: #28a745;
-    border: none;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  li .edit-link:hover {
-    background-color: #218838;
-  }
-  
+
   input[type="text"] {
-    padding: 8px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
   }
-  
-  button {
-    padding: 8px 16px;
-    background-color: #17a2b8;
-    border: none;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #138496;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  .container form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container ul {
-    align-items: center;
-  }
-  
+}
